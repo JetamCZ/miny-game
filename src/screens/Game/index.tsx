@@ -29,7 +29,7 @@ const Game = (props: Props) => {
       {[...Array(15)].map((_, y) => (
         <div className={styles.row} key={y}>
           {[...Array(15)].map((_, x) => (
-            <Field field={game?.fields[`${x};${y}`]}/>
+            <Field field={game?.fields[`${x};${y}`]} isFlaggd={game?.flags?.includes(`${x};${y}`)}/>
           ))}
         </div>
       ))}
