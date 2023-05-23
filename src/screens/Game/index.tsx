@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import {Link, useParams} from "react-router-dom";
 import styles from "./game.module.css"
 import {Game as GameType} from "./types";
+import Field from "./Field";
 
 interface Props {
 
@@ -28,9 +29,7 @@ const Game = (props: Props) => {
       {[...Array(15)].map((_, y) => (
         <div className={styles.row} key={y}>
           {[...Array(15)].map((_, x) => (
-            <div className={styles.field} key={x}>
-              {game ? game?.fields[`${x};${y}`]?.type : ""}
-            </div>
+            <Field field={game?.fields[`${x};${y}`]}/>
           ))}
         </div>
       ))}

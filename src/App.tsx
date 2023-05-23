@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Welcome from "./screens/Welcome";
 import Game from "./screens/Game";
 import Joke from "./screens/Joke";
+import "./styles.scss"
 
 function App() {
   return (
