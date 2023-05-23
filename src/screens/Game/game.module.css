@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+}
+
+.field {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  margin: 2px;
+  background-color: #fafafa;
+  border-radius: 15%;
+  box-shadow: inset 0px -2px 2px 0px #e8e8e8;
+  transition: 50ms;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.empty {
+  opacity: 0.7;
+}
